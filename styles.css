@@ -4,9 +4,246 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    color: white;
 }
 
-.container:not(#nav, #footer)
+.container
 {
-    height: 100vh;
+    height: 75vh;
+}
+
+
+/* Navbar */
+#nav
+{
+    width: 100vw;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#1f2937;
+    
+}
+#nav #menu {
+    
+    margin-right: 30px;
+}
+#nav a {
+    text-decoration: none;
+    font-size: 14px;
+    padding: 0 14px;
+}
+
+#navLogo
+{
+    font-size: 24px;
+    margin-left: 30px;
+    color: #f9faf8;
+}
+
+
+/* hero section */
+#hero
+{
+    background-color:#1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#heroContent
+{
+    /* border: white 2px solid; */
+    width: 80vw;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#heroContent .card{
+    width: 50%;
+    height: 10rem;
+    padding: 0 30px 0 10px;
+}
+
+.card button {
+    background-color: #3882f6;
+    padding:5px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: large;
+}
+
+#heroContent #img {
+    background-color: rgb(125, 122, 122);
+    height: 14rem;
+    width: 24rem;
+    margin-top:2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+/* content card */
+#hero .headline
+{
+    font-size: 48px;
+    font-weight: extra-bold;
+    color: #f9faf8;
+}
+
+.card .para {
+    margin:20px 0;
+}
+
+
+/* info section */
+
+#info {
+    background-color: white;
+}
+
+#info .headline{
+    font-size: xx-large;
+    color: black;
+    text-align: center;
+    margin: 5rem 0;
+}
+
+#infoBox {
+    display: flex;
+    justify-content: center;
+    /* border: 2px solid black; */
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    margin-top:9rem;
+}
+#infoBox .box{
+    flex-wrap: wrap;
+    /* border: 2px blue solid; */
+    display: inherit;
+    justify-content: center;
+}
+#infoBox .box .empty {
+    width: 160px;
+    height: 150px;
+    border: 2px solid blue;
+    border-radius: 9px;
+}
+#infoBox .box .infopara {
+    text-align: center;
+    color: black;
+    font-size: medium;
+    padding :10px 25px;
+}
+
+/* quote section */
+#quote
+{
+    background-color: #e5e7eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quoteContent 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+#quotepara
+{
+    color: #1f2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    width: 51rem;
+}
+
+#thor 
+{
+    color: black;
+    font-size: x-large;
+    font-weight: bolder;
+    margin-left: 34rem;
+}
+
+/* sign up */
+#signUp
+{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#signup-container
+{
+    width: 60vw;
+    height: 10rem;
+    background-color: #3882f6;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#signup-container
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#signUp .content
+{
+    color: black;
+}
+#signUp .content h4
+{
+    
+    font-size: xx-large;
+}
+
+#signUp .content p
+{
+    font-size: large;
+}
+
+#signUp button
+{
+    color: white;
+    padding:0.5rem 2rem;
+    border: 3px solid white;
+    
+    border-radius: 10px;
+    font-size: large;
+    background-color: #3882f6;
+}
+#signUp button:hover
+{
+    cursor: grab;
+    background-color: white;
+    color: #3882f6;
+}
+
+
+
+#footer
+{
+    height: 5rem;
+    background-color: #1f2937;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer span, #footer a 
+{
+    padding:0 0.5rem;
+    text-decoration: none;
+    font-size: large;
 }
